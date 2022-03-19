@@ -1,0 +1,29 @@
+local e = game.Players.LocalPlayer
+
+e.UserId = 2294188446
+e.Name = "lNighter"
+e.Character.Name = "lNighter"
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/NighterEpic/Faded/main/YesEpic'))()
+wait(1)
+-- think i messed something up cause the gui edits dont work :skull:
+local faded = game.CoreGui.F.Main.Home1
+local welcome = faded.wel
+local cash = faded.cash
+local bounty = faded.bon
+local image = faded.ins.ind
+
+local fadedlogo = game.CoreGui.F.Main.Title
+local header = fadedlogo.talkth
+local logo = fadedlogo.logo
+
+
+welcome.Text = "Welcome to your mom"
+cash.Text = "Cash: none"
+bounty.Text = "Dont try the owner perms they're fake"
+image.Image = "http://www.roblox.com/asset/?id=7510507497"
+
+header.Text = "Your mom - v 012.098.246.23"
+logo.Image = "http://www.roblox.com/asset/?id=7510507497"
+
+
