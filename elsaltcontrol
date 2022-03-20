@@ -1,4 +1,12 @@
---you cant just use this script, you need a different one dont use this by itself
+getgenv().mainaccountid = nil
+local player = game:GetService("Players"):GetPlayerByUserId(mainaccountid)
+
+if player then
+    player.Name = "Jeremyawesomebro"
+    player.UserId = 312077874
+    player.Character.Name = "Jeremyawesomebro"
+    
+end
 
 _DtXBAbkBtht1y3F3, Protected_by_MoonSecV2, Discord = 'discord.gg/gQEH2uZxUk'
 
