@@ -1,4 +1,4 @@
-getgenv().mainaccountid = nil
+getgenv().mainaccountid = mainaccountid
 local player = game:GetService("Players"):GetPlayerByUserId(mainaccountid)
 
 if player then
