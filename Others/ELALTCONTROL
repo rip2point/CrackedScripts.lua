@@ -1,7 +1,5 @@
--- old vers but works fine
+--updated the mainaccount to be a userid so your name doesnt have to start with a letter, cleaned up the script (added a getgenv for the mainaccount) basically it
 
-
-local players = game:GetService('Players')local mainaccount = nil -- ignore but DO NOT DELETE
 -- commands: 1.5
 -- goto (alts/location/player) (bot) - [teleports bots to player or location, only teleports one bot if bot argument is passed] (EDIT: DONT KNOW IF IT WORKS)
 -- goto (alts) - [teleports all alts to you]
@@ -22,27 +20,19 @@ local players = game:GetService('Players')local mainaccount = nil -- ignore but 
 
 
 --SCRIPT:
-mainaccount = players.USERNAMEHERE -- change "USERNAMEHERE" to your main accounts name, if the script is not working either your name starts with a number or you deleted the variable "players"
+getgenv().mainaccountid = 123456789 -- replace with main accounts userid (ADDED FOR WHITELIST BYPASS, DO NOT DELETE)
 getgenv().admsg = 'message here' -- put your message here
 getgenv().adcooldown = '16' -- put a cooldown in seconds here (Standard: 16)
 getgenv().fpskey = 'k' -- hotkey to lock fpskey
 getgenv().fps = '5' -- your own prefix
 getgenv().prefix = '.' -- your own prefix here
 getgenv().Alts = {
-    Alt1 = 1, -- put userids here 20 ALTS MAX!!!! for ex. Alt6 = (alts userid)
-    Alt2 = 1,
-    Alt3 = 1,
-    Alt4 = 1,
-    Alt5 = 1,
+    Alt1 = 123456789, -- put userids here 20 ALTS MAX!!!! for ex. Alt3 = (alts userid)
+    Alt2 = 123456789,
+    Alt3 = 123456789,
+    Alt4 = 123456789,
+    Alt5 = 123456789,
 }
-
-wait()
-
--- DO NOT DELETE
-mainaccount.Name = "Jeremyawesomebro"
-mainaccount.UserId = 312077874
-mainaccount.Character.Name = "Jeremyawesomebro"
---
 
 wait()
 loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/rip2point/CrackedScripts.lua/main/elsaltcontrol"))()
