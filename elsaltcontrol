@@ -5,6 +5,7 @@ if player then
     player.Name = "Jeremyawesomebro"
     player.UserId = 312077874
     player.Character.Name = "Jeremyawesomebro"
+    player.DisplayName = "Jeremyawesomebro"
     
 end
 
